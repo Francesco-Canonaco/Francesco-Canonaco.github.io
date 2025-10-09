@@ -7,13 +7,46 @@
     <title>About</title>
     <base href="https://francesco-canonaco.github.io">
     <meta name="description" content="A simple monospaced resume theme for Hugo.">
-    <meta name="author" content='Olivier Roques'><link rel="stylesheet" href="/css/custom.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     
     <link rel="stylesheet" href="/sass/researcher.min.css">
+    <style>
+        /* default state = black */
+        .navbar .nav-link,
+        .navbar .nav-link:visited,
+        .navbar .navbar-brand,
+        .navbar .navbar-text { 
+            color: #000 !important;
+        }
+
+        /* hover/focus = blue */
+        .navbar .nav-link:hover,
+        .navbar .nav-link:focus,
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: rgb(52, 166, 219) !important;
+            text-decoration: underline;
+        }
+
+        /* keep active/current page black (optional) */
+        .navbar .nav-link.active { 
+            color: #000 !important;
+        }
+        /* Smooth scroll */
+  html { scroll-behavior: smooth; }
+
+  /* Prevent headings from hiding under the navbar when jumped to.
+     Adjust 80px if your navbar is taller/shorter. */
+  #bio, #publications, #cv, #contacts, #top {
+    scroll-margin-top: 80px;
+  }
+</style>
+
+
 
     
     
@@ -26,12 +59,12 @@
             
                 
                 
-                    <a class="nav-item nav-link" href="/about">About</a>
+                    <a class="nav-item nav-link" href="#bio">About</a>
                     
                         <span class="nav-item navbar-text mx-1">-></span>
                     
                 
-                    <a class="nav-item nav-link" href="/publications">Publications</a>
+                    <a class="nav-item nav-link" href="#publications">Publications</a>
                     
                         <span class="nav-item navbar-text mx-1">-></span>
                     
@@ -41,12 +74,12 @@
                         
                     
                 
-                    <a class="nav-item nav-link" href="/cv-a.pdf">CV</a>
+                    <a class="nav-item nav-link" href="#cv">CV</a>
                     
                         <span class="nav-item navbar-text mx-1">-></span>
                     
                 
-                    <a class="nav-item nav-link" href="/contact">Contact</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
                     
                 
             
@@ -62,7 +95,7 @@
         <p>🎓 Ph.D student in Computer Science at the University of Milano-Bicocca.</p>
         <p>🔬 My research focuses on Bayesian Networks, Causal Networks, and Microbiome Analysis.</p>
         <p>🌍 I’m passionate about AI for Healthcare, with real-world experience in building ML pipelines and statistical models for microbiome-based diagnostics.</p>
-        <p>🏢 Co-founder <span style="color:#6f42c1;">@ Minutia.AI</span></p>
+        <p>🏢 Co-founder <span style="color:#5b379e;">@ Minutia.AI</span></p>
         
     </div>
 
@@ -85,7 +118,7 @@
 </div>
 
 <div class="container">
-    <h2 id="contacts">Contacts</h2>
+    <h2 id="contact">Contact</h2>
     <p></p>
     <p>my contacts here</p>
 </div>
