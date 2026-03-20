@@ -1,0 +1,10 @@
+title: 
+logo: /assets/img/logo.png
+description: Felix, qui potuit rerum cognoscere causas. Virgil's Georgics (Book 2, 490)
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-minimal
+header_pages:
+  - index.md
+  - blog.md
+  
